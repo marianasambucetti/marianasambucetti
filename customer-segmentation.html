@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Personality Segmentation — Mariana Sambucetti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Mariana Sambucetti</a>
+  <div class="nav-sub">Data Science & AI</div>
+  <div class="nav-section">Páginas</div>
+  <a href="index.html">Biografía</a>
+  <div class="nav-section" style="margin-top:16px">Proyectos</div>
+  <a href="siniestros.html">Análisis de Siniestros de Tránsito</a>
+  <a href="customer-segmentation.html" class="active">Customer Personality Segmentation</a>
+  <a href="potential-customers.html">Potential Customers Prediction</a>
+  <a href="roast-ai.html">RoastAI — Clasificación de café</a>
+  <a href="clasificacion-quejas.html">Clasificación de Quejas Financieras</a>
+  <div class="nav-footer">
+    <a href="mailto:marianasambucetti@gmail.com">marianasambucetti@gmail.com</a>
+    <a href="https://www.linkedin.com/in/mariana-sambucetti/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/marianasambucetti" target="_blank">GitHub</a>
+  </div>
+</nav>
+
+<main>
+  <div class="project-header">
+    <div class="project-meta">
+      <span class="meta-item">02</span>
+      <span class="meta-item">MIT IDSS — Making Sense of Unstructured Data</span>
+      <span class="meta-item">Octubre 2025</span>
+      <span class="meta-item">Mariana Sambucetti</span>
+    </div>
+    <h1 class="project-title">Customer Personality Segmentation</h1>
+    <div>
+      <span class="badge">K-Means</span>
+      <span class="badge">PCA</span>
+      <span class="badge">Clustering</span>
+      <span class="badge">Silhouette</span>
+      <span class="badge">Scikit-learn</span>
+    </div>
+    <img class="project-img" src="img-customer/3e8ef7effbfe7c6fa04f1bdb0cc5633d.jpg" alt="Customer Personality Segmentation">
+  </div>
+
+  <div class="project-content">
+    <h2>Resumen del proyecto</h2>
+    <p>Cuando una empresa tiene miles de clientes, no puede tratarlos a todos igual. Algunos compran mucho, otros poco; algunos prefieren la tienda física, otros la web. El problema es cómo agruparlos de forma útil sin tener etiquetas previas. Eso es lo que intenté resolver en este proyecto: segmentar clientes en grupos diferenciados para que una empresa de retail pueda enfocar mejor sus estrategias de marketing.</p>
+    <p>Lo hice en el marco del programa de MIT IDSS, en el módulo Making Sense of Unstructured Data. El dataset tenía información de más de 2.000 clientes: edad, ingresos, estado civil, gasto por categoría de producto y respuesta a campañas. Primero hice un análisis exploratorio para entender los datos, después reduje las dimensiones con PCA y finalmente apliqué K-Means para encontrar los grupos.</p>
+    <p>Usé el método del codo y el coeficiente de Silhouette para decidir que 4 clusters eran lo más adecuado. Los cuatro grupos que encontré tienen perfiles bastante claros: compradores tradicionales con buen poder adquisitivo, familias con presupuesto ajustado que responden a ofertas, compradores digitales de alto valor, y clientes con poca actividad que necesitan reactivación.</p>
+    <p>Para cada segmento propuse acciones de negocio específicas, como programas de fidelización para los de alto valor y campañas de descuentos para los más sensibles al precio.</p>
+  </div>
+
+  <div class="recursos">
+    <h3>📁 Recursos del Proyecto</h3>
+    <div class="recursos-grid">
+      <a href="02-customer-segmentation/M_Sambucetti_Learner_Notebook_Full_Code_Version_Customer_Personality_Segmentation.html" target="_blank" class="btn btn-primary">🌐 Ver Notebook en HTML</a>
+      <a href="02-customer-segmentation/M_Sambucetti_Learner_Notebook_Full_Code_Version_Customer_Personality_Segmentation.ipynb" download class="btn btn-secondary">📓 Descargar Notebook (.ipynb)</a>
+      <a href="02-customer-segmentation/data/04_-_Dataset_-_Customer_Personality_Segmentation.csv" download class="btn btn-secondary">📂 Dataset (.csv)</a>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

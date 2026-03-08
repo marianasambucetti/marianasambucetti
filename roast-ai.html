@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoastAI — Mariana Sambucetti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Mariana Sambucetti</a>
+  <div class="nav-sub">Data Science & AI</div>
+  <div class="nav-section">Páginas</div>
+  <a href="index.html">Biografía</a>
+  <div class="nav-section" style="margin-top:16px">Proyectos</div>
+  <a href="siniestros.html">Análisis de Siniestros de Tránsito</a>
+  <a href="customer-segmentation.html">Customer Personality Segmentation</a>
+  <a href="potential-customers.html">Potential Customers Prediction</a>
+  <a href="roast-ai.html" class="active">RoastAI — Clasificación de café</a>
+  <a href="clasificacion-quejas.html">Clasificación de Quejas Financieras</a>
+  <div class="nav-footer">
+    <a href="mailto:marianasambucetti@gmail.com">marianasambucetti@gmail.com</a>
+    <a href="https://www.linkedin.com/in/mariana-sambucetti/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/marianasambucetti" target="_blank">GitHub</a>
+  </div>
+</nav>
+
+<main>
+  <div class="project-header">
+    <div class="project-meta">
+      <span class="meta-item">04</span>
+      <span class="meta-item">MIT Global Teaching Labs — AI Uruguay 2026</span>
+      <span class="meta-item">Enero 2026</span>
+      <span class="meta-item">Diego Aguiar · Mariana Sambucetti · Catalina Vaz Martins</span>
+    </div>
+    <h1 class="project-title">RoastAI — Clasificación de granos de café con Deep Learning</h1>
+    <div class="award">🥉 3er puesto en la presentación final del taller</div>
+    <div>
+      <span class="badge">ResNet18</span>
+      <span class="badge">PyTorch</span>
+      <span class="badge">Grad-CAM</span>
+      <span class="badge">Computer Vision</span>
+      <span class="badge">Fine-tuning</span>
+    </div>
+    <img class="project-img" src="img-roastai/fba06e188f6ae46e9cf32bd8ad00cc39.jpg" alt="RoastAI">
+  </div>
+
+  <div class="project-content">
+    <h2>Resumen del proyecto</h2>
+    <p>En el mundo del café, el nivel de tostado del grano define el sabor y la calidad del producto. Normalmente eso lo evalúa un experto mirando el color, pero es subjetivo y puede variar. La idea de RoastAI fue automatizar esa tarea: entrenar un modelo que, a partir de una foto del grano, identifique si es verde, tostado claro, medio u oscuro.</p>
+    <p>Este proyecto lo hicimos en equipo con Diego Aguiar y Catalina Vaz Martins durante el taller MIT Global Teaching Labs — AI Uruguay 2026, en enero. Fue intenso porque duró menos de dos semanas. El dataset original tenía imágenes de granos en las cuatro categorías, pero detectamos que había contaminación entre los datos de entrenamiento y test. Para solucionarlo, sacamos nosotros mismos más de 150 fotos nuevas respetando las condiciones del dataset original: fondo blanco, un solo grano y buena luz.</p>
+    <p>Usamos ResNet18, una red neuronal pre-entrenada, y le hicimos fine-tuning para nuestra tarea. También implementamos Grad-CAM para poder visualizar qué parte de la imagen mira el modelo cuando clasifica, lo cual es fundamental para verificar que realmente se fija en el grano y no en el fondo.</p>
+    <p>Los resultados fueron muy buenos: 98.59% de accuracy en test, clasificando bien 350 de 355 imágenes. El Grad-CAM confirmó que la atención del modelo se concentra en los granos. Este proyecto nos dio el 3er puesto en la presentación final del taller, y fue una experiencia que disfruté mucho porque combinó el trabajo práctico con un tema interesante.</p>
+  </div>
+
+  <div class="recursos">
+    <h3>📁 Recursos del Proyecto</h3>
+    <div class="recursos-grid">
+      <a href="04-roast-ai/RoastAI_Complete_Training_GradCAM_CPU_v4x2_epochs.html" target="_blank" class="btn btn-primary">🌐 Ver Notebook en HTML</a>
+      <a href="04-roast-ai/RoastAI_Complete_Training_GradCAM_CPU_v4x2_epochs.ipynb" download class="btn btn-secondary">📓 Descargar Notebook (.ipynb)</a>
+      <a href="04-roast-ai/docs/RoastAI_ProjectPresentation.pptx" download class="btn btn-secondary">📊 Presentación (.pptx)</a>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clasificación de Quejas Financieras — Mariana Sambucetti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Mariana Sambucetti</a>
+  <div class="nav-sub">Data Science & AI</div>
+  <div class="nav-section">Páginas</div>
+  <a href="index.html">Biografía</a>
+  <div class="nav-section" style="margin-top:16px">Proyectos</div>
+  <a href="siniestros.html">Análisis de Siniestros de Tránsito</a>
+  <a href="customer-segmentation.html">Customer Personality Segmentation</a>
+  <a href="potential-customers.html">Potential Customers Prediction</a>
+  <a href="roast-ai.html">RoastAI — Clasificación de café</a>
+  <a href="clasificacion-quejas.html" class="active">Clasificación de Quejas Financieras</a>
+  <div class="nav-footer">
+    <a href="mailto:marianasambucetti@gmail.com">marianasambucetti@gmail.com</a>
+    <a href="https://www.linkedin.com/in/mariana-sambucetti/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/marianasambucetti" target="_blank">GitHub</a>
+  </div>
+</nav>
+
+<main>
+  <div class="project-header">
+    <div class="project-meta">
+      <span class="meta-item">05</span>
+      <span class="meta-item">UTEC — Técnicas de IA: Deep Learning</span>
+      <span class="meta-item">Enero – Febrero 2026</span>
+      <span class="meta-item">Andrea Aranda · Yuri Biardo · Mariana Sambucetti</span>
+    </div>
+    <h1 class="project-title">Clasificación Automática de Quejas Financieras con DistilBERT</h1>
+    <div>
+      <span class="badge">DistilBERT</span>
+      <span class="badge">NLP</span>
+      <span class="badge">Fine-tuning</span>
+      <span class="badge">Transformers</span>
+      <span class="badge">HuggingFace</span>
+    </div>
+    <img class="project-img" src="img-clasificacion/ae2ffa711a7735ad4beb6b9b49f023f4.jpg" alt="Clasificación de Quejas Financieras">
+  </div>
+
+  <div class="project-content">
+    <h2>Resumen del proyecto</h2>
+    <p>El CFPB en Estados Unidos recibe miles de quejas de consumidores sobre productos financieros todos los días. Clasificarlas a mano es lento y caro, y cada persona escribe distinto, lo que lo hace aún más difícil. Lo que buscamos fue armar un modelo que lea el texto de la queja y le asigne automáticamente la categoría correcta entre cinco opciones: tarjetas de crédito, reportes crediticios, cobro de deudas, hipotecas y banca minorista.</p>
+    <p>Fue el proyecto final de la materia Técnicas de IA: Deep Learning en UTEC, y lo hicimos entre Andrea Aranda, Yuri Biardo, y yo. Trabajamos con más de 162.000 quejas reales del CFPB. El desafío principal fue que los datos venían muy desbalanceados: una sola categoría (credit_reporting) tenía el 56% de los casos.</p>
+    <p>Para resolverlo, usamos DistilBERT, una versión más liviana de BERT que mantiene casi todo su rendimiento, y le implementamos un Weighted Trainer que le da más peso a las categorías con menos datos en la función de pérdida.</p>
+    <p>El modelo terminó con un 89.89% de accuracy y un F1 macro de 0.87, o sea que clasifica bien casi 9 de cada 10 quejas y lo hace de forma pareja entre las cinco categorías. Los errores que comete tienen sentido: las categorías que más se confunden son las que comparten vocabulario financiero, como deudas y reportes crediticios.</p>
+  </div>
+
+  <div class="recursos">
+    <h3>📁 Recursos del Proyecto</h3>
+    <div class="recursos-grid">
+      <a href="05-clasificacion-quejas/ProyectoFinal_Clasificacion_Quejas.html" target="_blank" class="btn btn-primary">🌐 Ver Notebook en HTML</a>
+      <a href="05-clasificacion-quejas/ProyectoFinal_Clasificacion_Quejas.ipynb" download class="btn btn-secondary">📓 Descargar Notebook (.ipynb)</a>
+      <a href="05-clasificacion-quejas/docs/Final_Project_Proposal.pdf" download class="btn btn-secondary">📄 Propuesta del Proyecto (.pdf)</a>
+      <a href="05-clasificacion-quejas/docs/Final_Project_Written_Report.pdf" download class="btn btn-secondary">📄 Informe Final (.pdf)</a>
+      <a href="05-clasificacion-quejas/docs/ProyectoFinal_PPT.pdf" download class="btn btn-secondary">📊 Presentación (.pdf)</a>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
