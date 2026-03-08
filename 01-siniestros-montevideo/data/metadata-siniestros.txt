@@ -1,0 +1,42 @@
+El archivo en formato csv contiene los datos anuales de personas lesionadas en siniestros de tránsito en Montevideo.
+
+-----------------------------------------------------------------------------------
+
+Fecha (DD-MM-AAAA) : Día en que ocurre el siniestro de tránsito
+
+Edad (integer) : Edad de la persona lesionada.
+
+Rol (string) : Rol que tuvo el lesionado en el siniestro de tránsito, puede tomar el valor CONDUCTOR / PASAJERO / PEATON.
+
+Calle (string) : Calle donde ocurrió el siniestro de tránsito. En caso de ser un fallecido, incluye calle y esquina (intersección).
+
+Zona (string) :  Tipo de zona donde ocurrió el siniestro, puede tomar el valor URBANA / SUBURBANA / RURAL / SIN DATOS.
+
+Tipo de resultado (string) : Lesión de resultado del siniestro, puede tomar el valor HERIDO LEVE / HERIDO GRAVE / FALLECIDO EN CENTRO DE ASISTENCIA / FALLECIDO EN EL LUGAR. Este dataset no cuenta con datos de ilesos.
+
+Tipo de siniestro (string) : Tipo de siniestro ocurrido, puede tomar el valor ATROPELLO DE ANIMALES / ATROPELLO DE PEATÓN / DESPISTE / CAÍDA / COLISIÓN ENTRE VEHÍCULOS / COLISIÓN CON OBSTÁCULO EN CALZADA
+
+Usa cinturón (string) : Registro de uso de cinturón, puede tomar el valor NO USA CINTURÓN / SIN DATOS
+
+Usa casco (string) : Registro de uso de casco, puede tomar el valor NO USA CASCO / USA CASCO / SIN DATOS
+
+Día de la semana (string) : Día de la semana en que ocurrió el siniestro.
+
+Sexo (string) : Sexo de la persona lesionada, puede tomar el valor MASCULINO / FEMENINO / SIN DATOS
+
+Hora (integer) : Hora en que ocurrió el siniestro, puede tomar valores enteros del 0 al 23
+
+Departamento (string) : Departamento en que ocurrió el siniestro, toma valor MONTEVIDEO
+
+Localidad (string) : Localidad en que ocurrió el siniestro, puede tomar el valor MONTEVIDEO / SIN DATOS
+
+Novedad (integer) : Número identificador del siniestro de tránsito. 
+
+Tipo de Vehiculo (string) : Tipo de vehículo involucrado en la lesión ocasionada en el siniestro de tránsito, puede tomar el valor  AUTO / MOTO / CAMION / BICICLETA / OMNIBUS / SIN DATOS / OTRO. 
+
+fixed (string) : Identificador de procesamiento de variable tipo de vehículo, puede tomar el valor 1 / SIN DATOS , para las categorías no procesadas
+
+X (integer) : Longitud de ubicación del siniestro de tránsito
+
+Y (integer) : Latitud de ubicación del siniestro de tránsito
+-----------------------------------------------------------------------------------
