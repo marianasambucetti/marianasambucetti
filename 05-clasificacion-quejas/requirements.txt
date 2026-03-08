@@ -1,0 +1,9 @@
+transformers
+datasets
+accelerate
+scikit-learn
+torch
+pandas
+numpy
+matplotlib
+seaborn
