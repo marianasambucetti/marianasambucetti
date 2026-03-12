@@ -20,11 +20,12 @@
   <a href="roast-ai.html">RoastAI — Clasificación de café</a>
   <a href="clasificacion-quejas.html">Clasificación de Quejas Financieras</a>
   <div class="nav-footer">
-    <span id="email-btn" onclick="
+    <a href="#" id="email-btn" onclick="
+      event.preventDefault();
       navigator.clipboard.writeText('marianasambucetti@gmail.com');
       this.textContent = '✓ Copiado!';
       setTimeout(() => this.textContent = 'Email', 2000);
-    " style="cursor:pointer">Email</span>
+    ">Email</a>
     <a href="https://www.linkedin.com/in/mariana-sambucetti/" target="_blank">LinkedIn</a>
     <a href="https://github.com/marianasambucetti" target="_blank">GitHub</a>
     <a href="cv.pdf" download>⬇ Descargar CV</a>
