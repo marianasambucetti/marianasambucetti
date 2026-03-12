@@ -1,6 +1,6 @@
 # 🚦 Análisis de Siniestros de Tránsito en Montevideo (2022)
 
-**Autores:** Diego Aguiar, Andrea Aranda, Mariana Sambucetti
+**Autores:** Diego Aguiar, Andrea Aranda, Gerardo Gonzalez, Mariana Sambucetti
 
 **Curso:** Fundamentos de Programación para Ciencia de Datos — UTEC (Especialización en Ciencia de Datos e IA)
 
